@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9DD65E40-F766-4D3D-A520-74E4246F721E}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Decio</RootNamespace>
+    <AssemblyName>Decio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>283621f0-2996-4630-a5ea-3a8ce527436c</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <WPTombstoneEnabled>false</WPTombstoneEnabled>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>Background.png</TileImage>
+    <TileTitle>Decio</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>PhoneGameThumb.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Devices.Sensors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Scenario.cs" />
+    <Compile Include="Animation\Sprite.cs" />
+    <Compile Include="Animation\SpriteSheetPacker.cs" />
+    <Compile Include="Collision\AngulatedRectangle.cs" />
+    <Compile Include="Energy\EnergyBar.cs" />
+    <Compile Include="Input\CustomMouse.cs" />
+    <Compile Include="Joysticks\Analogic\AnalogicJoypad.cs" />
+    <Compile Include="Joysticks\Analogic\BigPad.cs" />
+    <Compile Include="Joysticks\Analogic\MediumPad.cs" />
+    <Compile Include="Joysticks\Analogic\MiniPad.cs" />
+    <Compile Include="Joysticks\Digital\DigitalJoypad.cs" />
+    <Compile Include="Joysticks\Digital\Pad.cs" />
+    <Compile Include="Objects\AnimatedObject.cs" />
+    <Compile Include="Objects\Object.cs" />
+    <Compile Include="Particle\Particle.cs" />
+    <Compile Include="Particle\ParticleEmitter.cs" />
+    <Compile Include="Personages\AccelerometerPersonage.cs" />
+    <Compile Include="Personages\AngulatedAccelerometerPersonage.cs" />
+    <Compile Include="Personages\AngulatedKeyboardPersonage.cs" />
+    <Compile Include="Personages\AngulatedMotionPersonage.cs" />
+    <Compile Include="Personages\AngulatedMousePersonage.cs" />
+    <Compile Include="Personages\Base\AnimatedPersonage.cs" />
+    <Compile Include="Personages\Base\Personage.cs" />
+    <Compile Include="Personages\KeyBoardPersonage.cs" />
+    <Compile Include="Physics\ObliqueMovement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileMap\Tile.cs" />
+    <Compile Include="TileMap\TileMap.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="PhoneGameThumb.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DecioContent\DecioContent.contentproj">
+      <Name>DecioContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

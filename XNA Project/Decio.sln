@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decio", "Decio\Decio\Decio.csproj", "{9DD65E40-F766-4D3D-A520-74E4246F721E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecioContent", "Decio\DecioContent\DecioContent.contentproj", "{54AB4101-5923-470F-8680-B6C0C6042F98}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{9DD65E40-F766-4D3D-A520-74E4246F721E}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{54AB4101-5923-470F-8680-B6C0C6042F98}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{54AB4101-5923-470F-8680-B6C0C6042F98}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
